@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head%}
+<title>{{r['relatorio']}}</title>
+{% endblock %}
+
+
+{% block body%}
+<style>
+  h1 { text-align: center;}
+  h3 { text-align: center;}
+  ul { list-style-type: none; text-align: center; font-size: 25px}
+  a { background-color: #dbc8c8; color: #000000;
+    padding: 5px; }
+  form { text-align: center;}
+  input[type=text]{width: 90%; height: 6em}
+  input[type=text]:focus {
+  border: 3px solid #555;
+}
+</style>
+<a href="/"><button class="btn"><i class="fa fa-home" href="/"></i></button></a>
+
+<br><br><br>
+
+<h1>{{r['relatorio']}}</h1>
+<br><br><br>
+<p><b>Relatorio:</b><br> {{r['texto']}}</p>
+{% endblock %}
+>

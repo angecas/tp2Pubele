@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title> Autores </title>
+{% endblock %}
+
+{% block body %}
+  <style>
+    h1 { text-align: center;}
+    h2 { text-align: center;}
+    h3 { text-align: center;}
+    ul { list-style-type: none; text-align: center; font-size: 25px}
+    a { background-color: #dbc8c8; color: #000000;
+      padding: 5px; text-align: center; }
+    form { text-align: center;}
+    input[type=text]{width: 90%; height: 6em}
+    input[type=text]:focus {
+    border: 3px solid #555;
+  }
+
+  </style>
+
+  <a href="/"><button class="btn"><i class="fa fa-home" href="/"></i></button></a>
+  <h1>Autores:</h1>
+<br><br><br>
+  <div id="container">
+    <a class="btn btn-secondary btn-lg"
+    href="/angelica">
+    Angélica Rodrigues</a>
+  </div>
+
+  <div id="container">
+    <a class="btn btn-secondary btn-lg"
+    href="/bruna">
+    Bruna Simaens Ramoa</a>
+  </div>
+
+  <div id="container">
+    <a class="btn btn-secondary btn-lg"
+    href="/bruno">
+    Bruno Couto</a>
+  </div>
+
+{% endblock %}

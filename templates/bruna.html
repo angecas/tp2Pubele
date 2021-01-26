@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Bruna Simaens Ramoa</title>
+{% endblock %}
+
+
+{% block body %}
+<style media="screen">
+dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+dt{
+  color: #ffffff;
+  padding: 15px 25px
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+dl{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 40px;
+}
+a { background-color: #dbc8c8; color: #000000;
+  padding: 5px; text-align: center; }
+form{background-color: #dbc8c8; color: #000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  }
+</style>
+
+<a href="/"><button class="btn"><i class="fa fa-home" href="/"></i></button></a>
+<br>
+<form>
+ <input type="button" value="Back" onclick="history.back()">
+</form>
+<div id="container">
+<img src="https://scontent-lis1-1.xx.fbcdn.net/v/t1.0-9/141213060_1363133760706933_7479509786745328533_n.jpg?_nc_cat=111&ccb=2&_nc_sid=730e14&_nc_ohc=OULRjP55JKgAX_uteSC&_nc_ht=scontent-lis1-1.xx&oh=155138a64a901d99a8c824b17a6fdabc&oe=60323F0A" class="img-thumbnail" alt="profile" style="float:center">
+<dl>
+  <dt><b>Nome Completo</b></dt>
+  <dd>Bruna Miguel Simaens Ramoa</dd>
+  <dt><b>Numero</b></dt>
+  <dd>a80825</dd>
+  <dt><b>Email</b></dt>
+  <dd>a80825@alunos.uminho.pt</dd>
+  <dt><b>Localidade</b></dt>
+  <dd>Braga</dd>
+</dl>
+</div>
+
+{% endblock %}

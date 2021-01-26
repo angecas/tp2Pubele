@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Utilidades</title>
+{% endblock %}
+
+
+{% block body %}
+<style>
+  h1 { text-align: center;}
+  h2 { text-align: center;}
+  a { background-color: #dbc8c8; color: #000000;
+    padding: 5px; }
+</style>
+<a href="/"><button class="btn"><i class="fa fa-home" href="/"></i></button></a>
+
+<div id="container">
+  <a class="btn btn-secondary btn-lg"
+  href="/relatorios/add">
+  Adicionar Novo Relatório</a>
+</div>
+
+<div id="container">
+  <a class="btn btn-secondary btn-lg"
+  href="/relatorios/remove">
+  Eliminar Relatório</a>
+</div>
+
+<div id="container">
+  <a class="btn btn-secondary btn-lg"
+  href="/ordena">
+  Ordenar relatórios alfabeticamente</a>
+</div>
+
+<div id="container">
+<a class="btn btn-secondary btn-lg"
+  href="/uc">
+  E-learning</a>
+</div>
+
+<div id="container">
+  <a class="btn btn-secondary btn-lg"
+  href="mailto:omeumail@mail.com">
+  Enviar um e-mail</a>
+</div>
+
+<div id="container">
+  <a class="btn btn-secondary btn-lg"
+  href="/reset">
+  Reset</a>
+</div>
+
+<div id="container">
+  <a class="btn btn-secondary btn-lg"
+  href="/uploadfile">
+  O teu arquivo de ficheiros</a>
+</div>
+
+
+
+{% endblock %}

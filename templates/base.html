@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% block head %}
+  {% endblock %}
+
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div id="page-container">
+   <div id="content-wrap">
+     <!-- all other page content -->
+   </div>
+   <footer id="footer"></footer>
+ </div>
+
+    {% block body %}
+    {% endblock %}
+
+  <style>
+  body { background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(12,12,24,1) 19%, rgba(34,34,47,1) 46%, rgba(43,44,59,1) 71%, rgba(23,13,13,1) 99%); }
+  img {display: block;
+  margin-left: auto;
+  margin-right: auto;}
+  img { padding: width:300px; height:200px; padding: 50px 50px 50px 50px;}
+  #container{
+  text-align: center;font-size : 40px;
+  padding: 1px;
+  border-radius: 5px;
+  margin:5px}
+  html, body {
+  min-height: 100%;}
+  body {
+  padding: 0;
+  margin: 0;}
+  footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #dbc8c8;
+  color: #000000;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 50px;}
+  p {
+    color: #ffffff;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 40px;
+  }
+  h1{color: #ffffff;}
+  h2{color: #ffffff;}
+  h3{color: #ffffff;}
+  dl{color: #ffffff;}
+  </style>
+
+
+  <footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    <b>Grupo 2 - Engenharia Biomédica - Publicação Eletrónica</b>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

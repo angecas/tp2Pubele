@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Trabalho Prático Grupo 2</title>
+{% endblock %}
+
+
+{% block body %}
+<img src="https://facs2017.di.uminho.pt/sites/default/files/logo_UMEENG_sem_nome.jpg" alt="Escola de Engenharia - Universidade do Minho " width="300" height="150" class="center" class="padding"  >
+<style>
+  h1 { text-align: center;}
+  h2 { text-align: center;}
+  a:link, a:visited {
+  background-color: #dbc8c8;
+  color: #000000;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  }
+</style>
+<br>
+<h2> Engenharia Biomédica </h2>
+<h2> Publicação Elétronica </h2>
+<br><br>
+
+<div id="container">
+  <a class="btn btn-secondary btn-lg"
+  href="/relatorios">
+  Relatórios</a>
+</div>
+
+
+<div id="container">
+<a class="btn btn-secondary btn-lg"
+  href="/utilidades">
+  Utilidades</a>
+</div>
+
+<div id="container">
+<a class="btn btn-secondary btn-lg"
+  href="/autores">
+  Autores</a>
+</div>
+
+
+
+
+{% endblock %}

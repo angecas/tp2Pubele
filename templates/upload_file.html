@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Carregar Ficheiros</title>
+{% endblock %}
+
+
+{% block body %}
+<style>
+  h1 { text-align: center;}
+  p { text-align: center;}
+  h2 { text-align: center;}
+  a {background-color: #dbc8c8; color: #000000;
+  padding: 5px; text-align: center;}
+  a:link, a:visited {
+  background-color: #dbc8c8;
+  color: #000000;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  }
+</style>
+<a href="/"><button class="btn"><i class="fa fa-home" href="/"></i></button></a>
+    <h1>Gestão de Ficheiros</h1>
+    <form action="" method=post enctype=multipart/form-data>
+      <p><input type=file name=file>
+         <input type=submit value=Upload>
+    </form>
+     <hr>
+    {% for file in files %}
+      <img src="{{ url_for('upload', filename=file) }}" style="width: 64px">
+    {% endfor %}
+    
+    
+    {% for el in Ls  %}
+        <p><a href=" /return-files/{{el}}" >download {{el}}</a></p>
+    {% endfor %}
+       
+
+{% endblock %}    

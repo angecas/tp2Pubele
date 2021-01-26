@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block head%}
+<title>{{title}}</title>
+{% endblock %}
+
+
+{% block body%}
+<style>
+  h1 { text-align: center;}
+  h3 { text-align: center;}
+  ul { list-style-type: none; text-align: center; font-size: 25px}
+  a { background-color: #dbc8c8; color: #000000;
+    padding: 5px; }
+  form { text-align: center;}
+  input[type=text]{width: 90%; height: 6em}
+  input[type=text]:focus {
+  border: 3px solid #555;
+}
+</style>
+<a href="/"><button class="btn"><i class="fa fa-home" href="/"></i></button></a>
+<h1>Relatórios Disponiveis:</h1>
+<br>
+<ul>
+    {% for p in relatorios: %}
+        <li><a href="/relatorios/{{p}}">{{p}}</a></li>
+    {% endfor %}
+</ul>
+<br><br><br><br>
+
+<h1>Adicionar Novo Relatório:</h1>
+<div id="container">
+  <a class="btn btn-secondary btn-lg"
+  href="/relatorios/add">
+  Adicionar</a>
+</div>
+
+
+{% endblock %}
